@@ -5,7 +5,7 @@
 <p class="lead">Please answer the following questions before we start.</p>
 <form id="questionnaire" action="/questionnaire" method="post">
 
-  <!-- this form was developed by John Dumke and Margaret Pinson -->
+  <!-- Adapted from original form developed by John Dumke and Margaret Pinson -->
 <%
 questions = [
     {'type': 'choice', 'question': 'What is your age?', 'qkey': 'user_age_range', 'options': ['', '< 18', '18 to 24', '25 to 29', '30 to 39', '40 to 49', '50 to 59', '60 to 69', '70+']},
@@ -13,9 +13,9 @@ questions = [
     {'type': 'sep'},
     {'type': 'choice', 'question': 'Do you have experiences in perception tests?', 'qkey': 'user_perception_tests', 'options': ['', 'Yes', 'No']},
     {'type': 'choice', 'question': 'How good is your vision?', 'qkey': 'user_eye_quality', 'options': ['', 'Excellent', 'Good', 'Fair', 'Poor', 'Bad', 'Hard']},
-    {'type': 'choice', 'question': 'Which option best describes your environment?', 'qkey': 'user_room_quality', 'options': ['', 'Alone in a Quiet Room', 'Some Noise and Distractions', 'Significant Noise and Distractions']},
-    {'type': 'choice', 'question': 'What type of device are you now using?', 'qkey': 'user_computer_type', 'options': ['', 'Phone', 'Tablet', 'Laptop', 'Desktop']},
-    {'type': 'input', 'question': 'How did you got informed about this test?', 'qkey': 'user_test_origin'}
+    {'type': 'choice', 'question': 'What is your relationship with your conversation partner?', 'qkey': 'user_familiarity', 'options': ['', 'Stranger', 'Colleague / Classmate', 'Acquaintance', 'Friends', 'Family']},
+    {'type': 'choice', 'question': 'Did you play or take part in a Survival Game or related task?', 'qkey': 'user_survival_game', 'options': ['', 'Yes', 'No']},
+    {'type': 'input', 'question': 'What is your native language?', 'qkey': 'user_language'}
 ]
 %>
   <hr>

@@ -6,12 +6,12 @@
   "http_port": "12347",
   "playlist": "playlist.list",
   "template_folder": "templates",
-  "training": true,
+  "training": false,
   "trainingsplaylist": "training.list",
-  "rating_template": "rating/acr.tpl",
+  "rating_template": "rating/questionnaire_post-trial.tpl",
   "shuffle": true,
   "questionnaire": true,
   "gray_video": "videos/gray.mkv",
-  "no_media_playback": false,
+  "no_media_playback": true,
   "question": "What is your opinion of the video quality?"
 }
